@@ -1,21 +1,4 @@
-// let time1 = prompt(
-//   "bcolumbia, brazil, camaroes, colombia, comoros, hungary, india, japan, jordan"
-// );
-// let time2 = prompt(
-//   "bcolumbia, brazil, camaroes, colombia, comoros, hungary, india, japan, jordan"
-// );
-// let time3 = prompt(
-//   "bcolumbia, brazil, camaroes, colombia, comoros, hungary, india, japan, jordan"
-// );
-// let time4 = prompt(
-//   "bcolumbia, brazil, camaroes, colombia, comoros, hungary, india, japan, jordan"
-// );
-// let time5 = prompt(
-//   "bcolumbia, brazil, camaroes, colombia, comoros, hungary, india, japan, jordan"
-// );
-// let time6 = prompt(
-//   "bcolumbia, brazil, camaroes, colombia, comoros, hungary, india, japan, jordan"
-// );
+
 let body = document.querySelector('body')
 function azul(){
   body.setAttribute("class", "blue")
@@ -26,6 +9,7 @@ function verde(){
 function amarelo(){
   body.setAttribute("class", "")
 }
+
 function createGame(player1, player2, hora) {
   //function dentro de outra, esse é o "game"
   return `
@@ -57,5 +41,5 @@ document.querySelector(".cards").innerHTML =
     "quinta", //valor2
     createGame("brazil", "india", "08:00") // criando uma função dentro do parametro "game"
   ) +
-  createCard("28/11", "segunda", createGame("brazil", "brazil", "12:00")) +
-  createCard("02/12", "sexta", createGame("brazil", "brazil", "21:00"));
+  createCard("28/11", "segunda", createGame("brazil", "camaroes", "12:00")) +
+  createCard("02/12", "sexta", createGame("brazil", "japan", "21:00"));
